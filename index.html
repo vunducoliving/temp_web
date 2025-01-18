@@ -65,6 +65,34 @@
             color: rgba(255, 255, 255, 1);
         }
 
+        .contact-button {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgba(0, 0, 0, 0.8);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+        }
+
+        .contact-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(0, 0, 0, 1);
+            transform: translateY(-1px);
+        }
+
+        .contact-button:active {
+            transform: translateY(0);
+        }
+
+        .contact-button:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             h1 {
@@ -83,7 +111,10 @@
         <main class="content">
             <h1>VUNDU</h1>
             <p>A better web is under construction in La Mata de Curueño, Spain</p>
-            <span class="coming-soon">Coming Soon, <a href="mailto:hello@vundu.co?subject=I want to know more&body=Hello Vundu!,"> Contact us hello@vundu.co → </a></span>
+            <span class="coming-soon">Coming Soon </span>
+                <a href="mailto:hello@vundu.co?subject=I want to know more&body=Hello Vundu!," class="contact-button">
+                    Contact Us →
+                </a>
         </main>
     </div>
 </body>
