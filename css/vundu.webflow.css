@@ -2326,7 +2326,7 @@ blockquote {
 }
 
 .text-field-contact {
-  color: #fbfbfb;
+  color: var(--color--white);
   background-color: #fff;
   border: 1px solid #0000;
   border-bottom-color: #c9d4d833;
@@ -2352,7 +2352,6 @@ blockquote {
 }
 
 .text-field-contact:focus {
-  color: #fbfbfb;
   border-color: #212121;
 }
 
