@@ -4557,7 +4557,7 @@ blockquote {
   }
 
   .sticky-banner {
-    display: none;
+    display: block;
   }
 
   .image-6 {
