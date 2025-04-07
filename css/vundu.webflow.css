@@ -142,9 +142,14 @@ blockquote {
 
 .heading-2 {
   font-size: var(--heading--h2);
+  text-align: left;
   padding-bottom: 2rem;
   font-weight: 700;
   line-height: 1;
+}
+
+.heading-2.text-weight-bold {
+  text-align: center;
 }
 
 .heading-2.text-weight-bold.vundu {
@@ -329,6 +334,7 @@ blockquote {
 
 .heading-6 {
   font-size: var(--heading--h6);
+  align-self: center;
   line-height: 1.15;
 }
 
@@ -385,11 +391,16 @@ blockquote {
 
 .text-size-medium {
   font-size: var(--text-size--medium-2\<deleted\|variable-227de73e-b343-2d71-c2df-405ddac14c51\>);
+  text-align: left;
   font-weight: 400;
 }
 
 .text-size-medium.feature {
   font-weight: 500;
+}
+
+.text-size-medium.donations-paragraph {
+  text-align: justify;
 }
 
 .heading-1 {
@@ -574,6 +585,15 @@ blockquote {
   background-color: #d4a373;
   border-radius: 20px;
   transition-property: none;
+}
+
+.primary-button.essentials {
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  width: 50%;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .trusted-by-hero-logos {
@@ -1575,6 +1595,12 @@ blockquote {
   display: flex;
 }
 
+.check-list.hero-check-list {
+  flex-flow: row;
+  justify-content: space-around;
+  width: 85%;
+}
+
 .check-list.second-features {
   grid-row-gap: 1.5rem;
 }
@@ -1584,6 +1610,10 @@ blockquote {
   justify-content: flex-start;
   align-items: center;
   display: flex;
+}
+
+.check-item.hero-item {
+  flex-flow: column;
 }
 
 .features-image-wrapper {
@@ -1622,6 +1652,8 @@ blockquote {
   grid-row-gap: .5rem;
   border-style: none;
   border-radius: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-image-wrapper.half-bottom-image {
@@ -1879,7 +1911,7 @@ blockquote {
   width: 100%;
   padding: 2.5rem 2rem;
   text-decoration: none;
-  display: flex;
+  display: none;
 }
 
 .pricing-grid {
@@ -2460,7 +2492,7 @@ blockquote {
   grid-row-gap: 1.5rem;
   flex-direction: column;
   align-items: flex-start;
-  display: flex;
+  display: none;
 }
 
 .text-field-contact {
@@ -2520,6 +2552,11 @@ blockquote {
 
 .form-wrapper {
   width: 50%;
+}
+
+.form-wrapper.april-form {
+  justify-content: space-between;
+  display: flex;
 }
 
 .text-size-contact {
@@ -3048,6 +3085,14 @@ blockquote {
   padding-top: 0;
 }
 
+.text-block-11.contact {
+  padding-bottom: 1rem;
+}
+
+.text-block-11.padding-top {
+  padding-top: 1rem;
+}
+
 .section {
   display: block;
 }
@@ -3057,8 +3102,12 @@ blockquote {
 }
 
 .div-block.email-msg {
+  flex-flow: column;
+  align-items: center;
   padding-top: 0;
   padding-bottom: 1rem;
+  font-weight: 700;
+  display: flex;
 }
 
 .copy-large {
@@ -3136,11 +3185,18 @@ blockquote {
 }
 
 .lading-hero-wrapper {
+  justify-content: center;
   margin-top: 20vh;
   display: flex;
 }
 
-.block-quote, .block-quote-2, .block-quote-3 {
+.block-quote {
+  border-left-width: 0;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.block-quote-2, .block-quote-3 {
   border-left-width: 0;
   font-weight: 500;
 }
@@ -3213,6 +3269,22 @@ blockquote {
 
 .image-7 {
   width: 100%;
+}
+
+.text-block-16 {
+  font-size: 1.5rem;
+}
+
+.div-block-5 {
+  flex-flow: column;
+  align-self: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.div-block-5.essentials-block {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -4530,6 +4602,10 @@ blockquote {
     width: 100%;
   }
 
+  .form-wrapper.april-form {
+    flex-flow: column;
+  }
+
   .contact-wrapper {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
@@ -4569,6 +4645,16 @@ blockquote {
     padding-bottom: 0;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .text-block-11.contact {
+    font-size: 1.3rem;
+  }
+
+  .div-block.email-msg {
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
   }
 
   .sticky-banner {
