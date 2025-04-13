@@ -395,6 +395,10 @@ blockquote {
   font-weight: 400;
 }
 
+.text-size-medium.text-landing {
+  font-size: 1.25rem;
+}
+
 .text-size-medium.feature {
   font-weight: 500;
 }
@@ -1587,6 +1591,18 @@ blockquote {
   display: flex;
 }
 
+.features-image-container.hero-features-container {
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.max-width-80ch {
+max-width: 0ch;
+text-align: justify;
+}
+
 .check-list {
   grid-row-gap: 1.25rem;
   flex-direction: column;
@@ -1688,6 +1704,12 @@ blockquote {
   display: flex;
 }
 
+.hero-features-heading-wrapper {
+  margin: auto;
+  width: 100%;
+  max-width: 576px;
+}
+
 .features-icon-wrapper {
   flex: 0 auto;
   justify-content: flex-start;
@@ -1704,7 +1726,7 @@ blockquote {
   display: flex;
 }
 
-.features-vantages.hero-vantage {
+.hero-vantage {
   padding: 2rem 0;
 }
 
@@ -3581,10 +3603,6 @@ blockquote {
     padding-right: 0;
   }
 
-  .features-vantages.hero-vantage {
-    flex-flow: row-reverse wrap-reverse;
-  }
-
   .blog-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -3891,6 +3909,11 @@ blockquote {
 
   .heading-3 {
     font-size: 3rem;
+  }
+
+  .justify-text {
+    text-align: center;
+    text-justify: inter-word;
   }
 
   .double-button-component.margin-top-button-features {
